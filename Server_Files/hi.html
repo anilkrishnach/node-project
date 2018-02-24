@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>EMAIL</title>
+<style>
+pp{
+	background-color:#F98E32;
+	padding:10px;
+	text-align:center;
+}
+</style>
+<script type="javascript">
+</script>
+<meta charset="utf-8">
+</head>
+<h1 >Calculator</h1>
+<body >
+<form>
+<p left-margin="300px">
+<table style="width:300;text-align:center" padding="5px" border="3" cellspacing="5" cellpadding="6">
+<tr>
+<td colspan="4" ><input type="text" size="30" id="cal"></td></form>
+</tr>
+<tr>
+<td><input type="button"  maxsize="70" value="sin"  onclick="document.getElementById('cal').value+=this.value+'('"></td>
+<td><input type="button" size="30" value="cos" onclick="document.getElementById('cal').value+=this.value+'('"></td>
+<td><input type="button" size="30" value="log" onclick="document.getElementById('cal').value+=this.value+'('"></td>
+<td><input type="button" size="30" value="CE" onclick="document.getElementById('cal').value=''"></td>
+</tr>
+<tr>
+<td><input type="button" size="30" value="7" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="8"  onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="9" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="+" onclick="document.getElementById('cal').value+=this.value"></td>
+</tr>
+<tr>
+<td><input type="button" size="30" value="4" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="5" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="6" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="-" onclick="document.getElementById('cal').value+=this.value"></td>
+</tr>
+<tr>
+<td><input type="button" size="30" value="1" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="2" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="3" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="*" onclick="document.getElementById('cal').value+=this.value"></td>
+</tr>
+<tr>
+<td> <input type="button" size="30" value="log" onclick="document.getElementById('cal').value+=this.value+'('" </td>
+<td><input type="button" size="30" value="0" onclick="document.getElementById('cal').value+=this.value"></td>
+<td><input type="button" size="30" value="Bksp" onclick="var i=document.getElementById('cal').value; i=i.substr(0,i.length-1);document.getElementById('cal').value=i;"></td>
+<td><input type="button" size="30" value="=" onclick="var i=document.getElementById('cal').value;
+if(i[0]=='s'||i[0]=='l'||i[0]=='c')
+	i='Math.'+i+')';
+document.getElementById('cal').value=eval(i);"></td>
+</tr>
+</table>
+</p>
+</form>
+</body>
+</html>
