@@ -31,8 +31,8 @@ app.get('/',(req,res) => {
 });
 app.post('/homepage',(req,res)=>{
   res.render('about.hbs') ;
-  console.log(req.body.rno);
-  console.log(req.body.pwd);
+  // console.log(req.body.rno);
+  // console.log(req.body.pwd);
 });
 app.listen(port, ()=>{
 console.log("Server is up at "+port);});
