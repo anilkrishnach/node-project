@@ -14,15 +14,15 @@ app.use((req,res,next)=>{
     if(err)
       console.log("Error");
   });
-  // next();
-  res.render('maintanence.hbs');
+  next();
+  // res.render('maintanence.hbs');
 });
 
 app.set('view engine','hbs');
 app.use(express.static(__dirname+'/Server_Files'));
 app.get('/',(req,res) => {
   res.render('homepage.hbs',{
-    name: "160115733084",
+    name: "Anil",
     class: "CSE-2",
     skills: [
       'C','C++','Java','HTML','CSS','Javascript','Node.js'
