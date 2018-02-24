@@ -1,49 +1,12 @@
 <html>
 <head>
-<title>
-  Welcome, {{> footer}}
-</title>
-<style>
-.skills {
-  background: linear-gradient(45deg,#b2cfff,#0962f2);
-  border:10px;
-  border-color: #09cbf1;
-  padding:20px;
-  width: 300;
-  text-align: center;
-  }
-  #bod{
-    background: linear-gradient(45deg,#0962f2,#b2cfff);
-  }
-  #a{
-    color: blue;
-    font-size: 20;
-    background-color: white;
-  }
-</style>
+  <title>This is the first page</title>
 </head>
-<body id="bod">
-  <font color='WHITE'>
-<p id="main" >
-  <br/><br/>
-  <h1>Name: {{name}}</h1>
-  <br/>
-  <h2>Class: {{class}}</h2>
-  <br/>
-  <div class="skills">
-  <script>
-    var sk='{{skills}}';
-    document.write("<font color='white' size='6'>")
-    var s=','+sk;
-    var a=s.split(',');
-    for(i in a)
-      document.writeln(a[i]+"<br/>");
-    document.write('</font>');
-  </script>
-</div>
-</p>
-<a href="/about" target="_blank" id="a">Figure</a>
-</font>
-{{> footer}}
+<body>
+  <ul type="disc">
+  <li><a href="/resume" target="_blank">View Resume</a></li>
+  <li><a href="https://github.com/anilkrishnach/" target="_blank">Git Profile</a></li>
+  <li><a href="https://www.hackerrank.com/Anilkrishna" target="_blank">hackerrank profile</a></li>
+</ul>
 </body>
 </html>

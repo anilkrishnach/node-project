@@ -21,18 +21,16 @@ app.use((req,res,next)=>{
 app.set('view engine','hbs');
 app.use(express.static(__dirname+'/Server_Files'));
 app.get('/',(req,res) => {
-  res.render('homepage.hbs',{
+  res.render('homepage.hbs');
+});
+app.get('/resume',(req,res)=>{
+  res.render('resume.hbs',{
     name: "Anil",
     class: "CSE-2",
     skills: [
       'C','C++','Java','HTML','CSS','Javascript','Node.js'
     ],
   });
-});
-app.post('/homepage',(req,res)=>{
-  res.render('about.hbs') ;
-  // console.log(req.body.rno);
-  // console.log(req.body.pwd);
 });
 app.listen(port, ()=>{
 console.log("Server is up at "+port);});
